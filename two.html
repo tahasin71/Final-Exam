@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 2</h1><br>
+    <div>
+        <table border="2" id="data">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Mobile</td>
+                <td>Email</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script>
+        
+             var table = document.getElementById('data');
+             data=[{"id":"001","full_name":"Kuddus Ali","mobile":"01711-235458","email":"kussus@gmail.com"},{"id":"002","full_name":"Alex Breyan","mobile":"01552-235622","email":"alex@yeahoo.com"},{"id":"003","full_name":"Sakib Al Hasan","mobile":"01815-235003","email":"sakib@yopmail.com"},{"id":"004","full_name":"Mohammad Ibrahim","mobile":"01744-235644","email":"ibrahim@yopmail.com"},{"id":"005","full_name":"Sajal Dutta","mobile":"01755-235655","email":"sajal@yopmail.com"}]
+                data.forEach(item => {
+                    var row = table.insertRow(); 
+                    row.insertCell(0).textContent = item.id;
+                    row.insertCell(1).textContent = item.full_name;
+                    row.insertCell(2).textContent = item.mobile;
+                    row.insertCell(3).textContent = item.email;
+                });
+         
+    </script>
+    </center>
+</body>
+</html>
